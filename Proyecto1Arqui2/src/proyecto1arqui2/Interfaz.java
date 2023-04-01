@@ -11,6 +11,12 @@ import javax.swing.JTable;
  * @author arman
  */
 public class Interfaz extends javax.swing.JFrame {
+<<<<<<< HEAD
+=======
+    
+    Random fRandom = new Random();
+    instruccion fInts = new instruccion();
+>>>>>>> Generadordeinstrucciones
 
     /**
      * Creates new form Interfaz
@@ -992,7 +998,12 @@ public class Interfaz extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+<<<<<<< HEAD
         // TODO add your handling code here:
+=======
+            
+           System.out.println(fInts.Construir());
+>>>>>>> Generadordeinstrucciones
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
@@ -1052,6 +1063,10 @@ public class Interfaz extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(Interfaz.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+<<<<<<< HEAD
+=======
+       
+>>>>>>> Generadordeinstrucciones
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -1059,6 +1074,12 @@ public class Interfaz extends javax.swing.JFrame {
                 new Interfaz().setVisible(true);
             }
         });
+<<<<<<< HEAD
+=======
+        
+        
+        
+>>>>>>> Generadordeinstrucciones
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
