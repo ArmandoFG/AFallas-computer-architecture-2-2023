@@ -115,10 +115,6 @@
                       <Component id="jScrollPane9" alignment="1" pref="0" max="32767" attributes="0"/>
                       <Component id="jScrollPane8" alignment="0" pref="0" max="32767" attributes="0"/>
                       <Group type="102" alignment="0" attributes="0">
-<<<<<<< HEAD
-                          <EmptySpace min="-2" pref="0" max="-2" attributes="0"/>
-=======
->>>>>>> Generadordeinstrucciones
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="jLabel11" alignment="0" min="-2" max="-2" attributes="0"/>
                               <Component id="jLabel9" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -181,6 +177,10 @@
                   <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
                 </Property>
               </Properties>
+              <AccessibilityProperties>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="B1CPU2"/>
+                <Property name="AccessibleContext.accessibleDescription" type="java.lang.String" value=""/>
+              </AccessibilityProperties>
             </Component>
           </SubComponents>
         </Container>
@@ -208,6 +208,10 @@
                   <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
                 </Property>
               </Properties>
+              <AccessibilityProperties>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="B2CPU2"/>
+                <Property name="AccessibleContext.accessibleDescription" type="java.lang.String" value=""/>
+              </AccessibilityProperties>
             </Component>
           </SubComponents>
         </Container>
@@ -235,6 +239,10 @@
                   <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
                 </Property>
               </Properties>
+              <AccessibilityProperties>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="B3CPU2"/>
+                <Property name="AccessibleContext.accessibleDescription" type="java.lang.String" value=""/>
+              </AccessibilityProperties>
             </Component>
           </SubComponents>
         </Container>
@@ -262,6 +270,10 @@
                   <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
                 </Property>
               </Properties>
+              <AccessibilityProperties>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="B4CPU2"/>
+                <Property name="AccessibleContext.accessibleDescription" type="java.lang.String" value=""/>
+              </AccessibilityProperties>
             </Component>
           </SubComponents>
         </Container>
@@ -280,6 +292,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="---------"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="EjecutandoCPU2"/>
+          </AccessibilityProperties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel11">
           <Properties>
@@ -296,6 +311,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="---------"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="EjecutadoCPU2"/>
+          </AccessibilityProperties>
         </Component>
       </SubComponents>
     </Container>
@@ -379,6 +397,10 @@
                   <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
                 </Property>
               </Properties>
+              <AccessibilityProperties>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="B2CPU1"/>
+                <Property name="AccessibleContext.accessibleDescription" type="java.lang.String" value=""/>
+              </AccessibilityProperties>
             </Component>
           </SubComponents>
         </Container>
@@ -406,6 +428,10 @@
                   <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
                 </Property>
               </Properties>
+              <AccessibilityProperties>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="B1CPU1"/>
+                <Property name="AccessibleContext.accessibleDescription" type="java.lang.String" value=""/>
+              </AccessibilityProperties>
             </Component>
           </SubComponents>
         </Container>
@@ -433,6 +459,10 @@
                   <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
                 </Property>
               </Properties>
+              <AccessibilityProperties>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="B4CPU1"/>
+                <Property name="AccessibleContext.accessibleDescription" type="java.lang.String" value=""/>
+              </AccessibilityProperties>
             </Component>
           </SubComponents>
         </Container>
@@ -460,6 +490,10 @@
                   <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
                 </Property>
               </Properties>
+              <AccessibilityProperties>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="B3CPU1"/>
+                <Property name="AccessibleContext.accessibleDescription" type="java.lang.String" value=""/>
+              </AccessibilityProperties>
             </Component>
           </SubComponents>
         </Container>
@@ -492,7 +526,7 @@
             <Property name="text" type="java.lang.String" value="---------"/>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="Text0E0"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="EjecutandoCPU1"/>
           </AccessibilityProperties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel8">
@@ -503,7 +537,7 @@
             <Property name="text" type="java.lang.String" value="---------"/>
           </Properties>
           <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="text0E1"/>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="EjecutadoCPU1"/>
           </AccessibilityProperties>
         </Component>
       </SubComponents>
@@ -590,6 +624,9 @@
                   <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
                 </Property>
               </Properties>
+              <AccessibilityProperties>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="B1CPU4"/>
+              </AccessibilityProperties>
             </Component>
           </SubComponents>
         </Container>
@@ -617,6 +654,10 @@
                   <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
                 </Property>
               </Properties>
+              <AccessibilityProperties>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="B2CPU4"/>
+                <Property name="AccessibleContext.accessibleDescription" type="java.lang.String" value=""/>
+              </AccessibilityProperties>
             </Component>
           </SubComponents>
         </Container>
@@ -644,6 +685,10 @@
                   <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
                 </Property>
               </Properties>
+              <AccessibilityProperties>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="B3CPU4"/>
+                <Property name="AccessibleContext.accessibleDescription" type="java.lang.String" value=""/>
+              </AccessibilityProperties>
             </Component>
           </SubComponents>
         </Container>
@@ -671,6 +716,10 @@
                   <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
                 </Property>
               </Properties>
+              <AccessibilityProperties>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="B4CPU4"/>
+                <Property name="AccessibleContext.accessibleDescription" type="java.lang.String" value=""/>
+              </AccessibilityProperties>
             </Component>
           </SubComponents>
         </Container>
@@ -689,6 +738,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="---------"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="EjecutandoCPU4"/>
+          </AccessibilityProperties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel19">
           <Properties>
@@ -705,6 +757,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="---------"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="EjecutadoCPU4"/>
+          </AccessibilityProperties>
         </Component>
       </SubComponents>
     </Container>
@@ -788,6 +843,10 @@
                   <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
                 </Property>
               </Properties>
+              <AccessibilityProperties>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="B1CPU3"/>
+                <Property name="AccessibleContext.accessibleDescription" type="java.lang.String" value=""/>
+              </AccessibilityProperties>
             </Component>
           </SubComponents>
         </Container>
@@ -815,6 +874,10 @@
                   <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
                 </Property>
               </Properties>
+              <AccessibilityProperties>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="B2CPU3"/>
+                <Property name="AccessibleContext.accessibleDescription" type="java.lang.String" value=""/>
+              </AccessibilityProperties>
             </Component>
           </SubComponents>
         </Container>
@@ -842,6 +905,10 @@
                   <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
                 </Property>
               </Properties>
+              <AccessibilityProperties>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="B3CPU3"/>
+                <Property name="AccessibleContext.accessibleDescription" type="java.lang.String" value=""/>
+              </AccessibilityProperties>
             </Component>
           </SubComponents>
         </Container>
@@ -869,6 +936,10 @@
                   <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
                 </Property>
               </Properties>
+              <AccessibilityProperties>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="B4CPU3"/>
+                <Property name="AccessibleContext.accessibleDescription" type="java.lang.String" value=""/>
+              </AccessibilityProperties>
             </Component>
           </SubComponents>
         </Container>
@@ -887,6 +958,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="---------"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="EjecutandoCPU3"/>
+          </AccessibilityProperties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel15">
           <Properties>
@@ -903,6 +977,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="---------"/>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="EjecutadoCPU3"/>
+          </AccessibilityProperties>
         </Component>
       </SubComponents>
     </Container>
@@ -943,35 +1020,63 @@
           <SubComponents>
             <Component class="javax.swing.JTable" name="jTable18">
               <Properties>
-                <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-                  <Table columnCount="8" rowCount="1">
-                    <Column editable="false" title="Bloque 0" type="java.lang.String">
-                      <Data value="0000"/>
+                <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection code="new javax.swing.table.DefaultTableModel(&#xa;    new Object [][] {&#xa;        {&quot;10&quot;, &quot;11&quot;, &quot;02&quot;, &quot;20&quot;, &quot;32&quot;, &quot;12&quot;, &quot;4&quot;, &quot;53&quot;}&#xa;    },&#xa;    new String [] {&#xa;        &quot;Bloque 0&quot;, &quot;Bloque 1&quot;, &quot;Bloque 2&quot;, &quot;Bloque 3&quot;, &quot;Bloque 4&quot;, &quot;Bloque 5&quot;, &quot;Bloque 6&quot;, &quot;Bloque 7&quot;&#xa;    }&#xa;) {&#xa;    Class[] types = new Class [] {&#xa;        java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class&#xa;    };&#xa;    boolean[] canEdit = new boolean [] {&#xa;        false, false, false, false, false, false, false, false&#xa;    };&#xa;&#xa;    public Class getColumnClass(int columnIndex) {&#xa;        return types [columnIndex];&#xa;    }&#xa;&#xa;    public boolean isCellEditable(int rowIndex, int columnIndex) {&#xa;        return canEdit [columnIndex];&#xa;    }&#xa;}" type="code"/>
+                </Property>
+                <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+                  <TableColumnModel selectionModel="0">
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
                     </Column>
-                    <Column editable="false" title="Bloque 1" type="java.lang.String">
-                      <Data value="0000"/>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
                     </Column>
-                    <Column editable="false" title="Bloque 2" type="java.lang.String">
-                      <Data value="0000"/>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
                     </Column>
-                    <Column editable="false" title="Bloque 3" type="java.lang.String">
-                      <Data value="0000"/>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
                     </Column>
-                    <Column editable="false" title="Bloque 4" type="java.lang.String">
-                      <Data value="0000"/>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
                     </Column>
-                    <Column editable="false" title="Bloque 5" type="java.lang.String">
-                      <Data value="0000"/>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
                     </Column>
-                    <Column editable="false" title="Bloque 6" type="java.lang.String">
-                      <Data value="0000"/>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
                     </Column>
-                    <Column editable="false" title="Bloque 7" type="java.lang.String">
-                      <Data value="0000"/>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
                     </Column>
-                  </Table>
+                  </TableColumnModel>
+                </Property>
+                <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+                  <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
                 </Property>
               </Properties>
+              <AccessibilityProperties>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="TablaMem"/>
+              </AccessibilityProperties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JTable()"/>
+              </AuxValues>
             </Component>
           </SubComponents>
         </Container>

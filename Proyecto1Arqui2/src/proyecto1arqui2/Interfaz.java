@@ -4,19 +4,19 @@
  */
 package proyecto1arqui2;
 
+import java.awt.Component;
+import javax.swing.JLabel;
+import javax.swing.JScrollPane;
 import javax.swing.JTable;
+import javax.swing.JViewport;
 
 /**
  *
  * @author arman
  */
 public class Interfaz extends javax.swing.JFrame {
-<<<<<<< HEAD
-=======
     
-    Random fRandom = new Random();
-    instruccion fInts = new instruccion();
->>>>>>> Generadordeinstrucciones
+
 
     /**
      * Creates new form Interfaz
@@ -142,6 +142,8 @@ public class Interfaz extends javax.swing.JFrame {
         });
         jTable6.setShowGrid(true);
         jScrollPane6.setViewportView(jTable6);
+        jTable6.getAccessibleContext().setAccessibleName("B1CPU2");
+        jTable6.getAccessibleContext().setAccessibleDescription("");
 
         jTable7.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -170,6 +172,8 @@ public class Interfaz extends javax.swing.JFrame {
         });
         jTable7.setShowGrid(true);
         jScrollPane7.setViewportView(jTable7);
+        jTable7.getAccessibleContext().setAccessibleName("B2CPU2");
+        jTable7.getAccessibleContext().setAccessibleDescription("");
 
         jTable8.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -198,6 +202,8 @@ public class Interfaz extends javax.swing.JFrame {
         });
         jTable8.setShowGrid(true);
         jScrollPane8.setViewportView(jTable8);
+        jTable8.getAccessibleContext().setAccessibleName("B3CPU2");
+        jTable8.getAccessibleContext().setAccessibleDescription("");
 
         jTable9.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -226,6 +232,8 @@ public class Interfaz extends javax.swing.JFrame {
         });
         jTable9.setShowGrid(true);
         jScrollPane9.setViewportView(jTable9);
+        jTable9.getAccessibleContext().setAccessibleName("B4CPU2");
+        jTable9.getAccessibleContext().setAccessibleDescription("");
 
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("EJECUTANDO:");
@@ -251,7 +259,6 @@ public class Interfaz extends javax.swing.JFrame {
                     .addComponent(jScrollPane9, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
                     .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
                     .addGroup(panel1Layout.createSequentialGroup()
-                        .addGap(0, 0, 0)
                         .addGroup(panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel11)
                             .addComponent(jLabel9)
@@ -282,6 +289,9 @@ public class Interfaz extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        jLabel10.getAccessibleContext().setAccessibleName("EjecutandoCPU2");
+        jLabel12.getAccessibleContext().setAccessibleName("EjecutadoCPU2");
+
         panel2.setBackground(new java.awt.Color(189, 147, 154));
 
         jTable2.setModel(new javax.swing.table.DefaultTableModel(
@@ -311,6 +321,8 @@ public class Interfaz extends javax.swing.JFrame {
         });
         jTable2.setShowGrid(true);
         jScrollPane2.setViewportView(jTable2);
+        jTable2.getAccessibleContext().setAccessibleName("B2CPU1");
+        jTable2.getAccessibleContext().setAccessibleDescription("");
 
         jTable3.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -339,6 +351,8 @@ public class Interfaz extends javax.swing.JFrame {
         });
         jTable3.setShowGrid(true);
         jScrollPane3.setViewportView(jTable3);
+        jTable3.getAccessibleContext().setAccessibleName("B1CPU1");
+        jTable3.getAccessibleContext().setAccessibleDescription("");
 
         jTable4.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -367,6 +381,8 @@ public class Interfaz extends javax.swing.JFrame {
         });
         jTable4.setShowGrid(true);
         jScrollPane4.setViewportView(jTable4);
+        jTable4.getAccessibleContext().setAccessibleName("B4CPU1");
+        jTable4.getAccessibleContext().setAccessibleDescription("");
 
         jTable5.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -395,6 +411,8 @@ public class Interfaz extends javax.swing.JFrame {
         });
         jTable5.setShowGrid(true);
         jScrollPane5.setViewportView(jTable5);
+        jTable5.getAccessibleContext().setAccessibleName("B3CPU1");
+        jTable5.getAccessibleContext().setAccessibleDescription("");
 
         textField1.setText("textField1");
 
@@ -452,8 +470,8 @@ public class Interfaz extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jLabel5.getAccessibleContext().setAccessibleName("Text0E0");
-        jLabel8.getAccessibleContext().setAccessibleName("text0E1");
+        jLabel5.getAccessibleContext().setAccessibleName("EjecutandoCPU1");
+        jLabel8.getAccessibleContext().setAccessibleName("EjecutadoCPU1");
 
         panel3.setBackground(new java.awt.Color(189, 147, 154));
 
@@ -484,6 +502,7 @@ public class Interfaz extends javax.swing.JFrame {
         });
         jTable14.setShowGrid(true);
         jScrollPane14.setViewportView(jTable14);
+        jTable14.getAccessibleContext().setAccessibleName("B1CPU4");
 
         jTable15.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -512,6 +531,8 @@ public class Interfaz extends javax.swing.JFrame {
         });
         jTable15.setShowGrid(true);
         jScrollPane15.setViewportView(jTable15);
+        jTable15.getAccessibleContext().setAccessibleName("B2CPU4");
+        jTable15.getAccessibleContext().setAccessibleDescription("");
 
         jTable16.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -540,6 +561,8 @@ public class Interfaz extends javax.swing.JFrame {
         });
         jTable16.setShowGrid(true);
         jScrollPane16.setViewportView(jTable16);
+        jTable16.getAccessibleContext().setAccessibleName("B3CPU4");
+        jTable16.getAccessibleContext().setAccessibleDescription("");
 
         jTable17.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -568,6 +591,8 @@ public class Interfaz extends javax.swing.JFrame {
         });
         jTable17.setShowGrid(true);
         jScrollPane17.setViewportView(jTable17);
+        jTable17.getAccessibleContext().setAccessibleName("B4CPU4");
+        jTable17.getAccessibleContext().setAccessibleDescription("");
 
         jLabel17.setForeground(new java.awt.Color(255, 255, 255));
         jLabel17.setText("EJECUTANDO:");
@@ -623,6 +648,9 @@ public class Interfaz extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        jLabel18.getAccessibleContext().setAccessibleName("EjecutandoCPU4");
+        jLabel20.getAccessibleContext().setAccessibleName("EjecutadoCPU4");
+
         panel5.setBackground(new java.awt.Color(189, 147, 154));
 
         jTable10.setModel(new javax.swing.table.DefaultTableModel(
@@ -652,6 +680,8 @@ public class Interfaz extends javax.swing.JFrame {
         });
         jTable10.setShowGrid(true);
         jScrollPane10.setViewportView(jTable10);
+        jTable10.getAccessibleContext().setAccessibleName("B1CPU3");
+        jTable10.getAccessibleContext().setAccessibleDescription("");
 
         jTable11.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -680,6 +710,8 @@ public class Interfaz extends javax.swing.JFrame {
         });
         jTable11.setShowGrid(true);
         jScrollPane11.setViewportView(jTable11);
+        jTable11.getAccessibleContext().setAccessibleName("B2CPU3");
+        jTable11.getAccessibleContext().setAccessibleDescription("");
 
         jTable12.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -708,6 +740,8 @@ public class Interfaz extends javax.swing.JFrame {
         });
         jTable12.setShowGrid(true);
         jScrollPane12.setViewportView(jTable12);
+        jTable12.getAccessibleContext().setAccessibleName("B3CPU3");
+        jTable12.getAccessibleContext().setAccessibleDescription("");
 
         jTable13.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -736,6 +770,8 @@ public class Interfaz extends javax.swing.JFrame {
         });
         jTable13.setShowGrid(true);
         jScrollPane13.setViewportView(jTable13);
+        jTable13.getAccessibleContext().setAccessibleName("B4CPU3");
+        jTable13.getAccessibleContext().setAccessibleDescription("");
 
         jLabel13.setForeground(new java.awt.Color(255, 255, 255));
         jLabel13.setText("EJECUTANDO:");
@@ -791,11 +827,14 @@ public class Interfaz extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        jLabel14.getAccessibleContext().setAccessibleName("EjecutandoCPU3");
+        jLabel16.getAccessibleContext().setAccessibleName("EjecutadoCPU3");
+
         panel6.setBackground(new java.awt.Color(134, 180, 161));
 
         jTable18.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {"0000", "0000", "0000", "0000", "0000", "0000", "0000", "0000"}
+                {"10", "11", "02", "20", "32", "12", "4", "53"}
             },
             new String [] {
                 "Bloque 0", "Bloque 1", "Bloque 2", "Bloque 3", "Bloque 4", "Bloque 5", "Bloque 6", "Bloque 7"
@@ -817,6 +856,7 @@ public class Interfaz extends javax.swing.JFrame {
             }
         });
         jScrollPane18.setViewportView(jTable18);
+        jTable18.getAccessibleContext().setAccessibleName("TablaMem");
 
         javax.swing.GroupLayout panel6Layout = new javax.swing.GroupLayout(panel6);
         panel6.setLayout(panel6Layout);
@@ -998,12 +1038,7 @@ public class Interfaz extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-<<<<<<< HEAD
-        // TODO add your handling code here:
-=======
             
-           System.out.println(fInts.Construir());
->>>>>>> Generadordeinstrucciones
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
@@ -1026,12 +1061,122 @@ public class Interfaz extends javax.swing.JFrame {
     public void ModificarTables(){
         
         jTable2.getTableHeader().setVisible(false);
+        jTable3.putClientProperty("AccessibleName", "B1CPU1");
+
+        
         
         
     }
     
+    public void cambiartexto(String texto, String name){
+        
+        Component[] componentes1 = panel1.getComponents();
+        Component[] componentes2 = panel2.getComponents();
+        Component[] componentes3 = panel3.getComponents();
+        Component[] componentes5 = panel5.getComponents();
+        
+        Component[] componentes = new Component[componentes1.length + componentes2.length+ componentes3.length+ componentes5.length];
+
+        
+    System.arraycopy(componentes1, 0, componentes, 0, componentes1.length);
+    System.arraycopy(componentes2, 0, componentes, componentes1.length, componentes2.length);
+    System.arraycopy(componentes3, 0, componentes, componentes1.length + componentes2.length, componentes3.length);
+    System.arraycopy(componentes5, 0, componentes, componentes1.length + componentes2.length + componentes3.length, componentes5.length);
+
+        for (Component componente : componentes) {
+            if (componente.getAccessibleContext().getAccessibleName() != null && componente.getAccessibleContext().getAccessibleName().equals(name)) {
+                JLabel miLabel = (JLabel) componente;
+                miLabel.setText(texto);
+            }
+
+
+        
+        
+    }
+    }
+    
+    public JTable retornarTable(String name){
+        
+        
+        
+        JTable miTable = null;
+        Component[] componentes1 = panel1.getComponents();
+        Component[] componentes2 = panel2.getComponents();
+        Component[] componentes3 = panel3.getComponents();
+        Component[] componentes5 = panel5.getComponents();
+        
+        Component[] componentes = new Component[componentes1.length + componentes2.length+ componentes3.length+ componentes5.length];
+
+        
+        System.arraycopy(componentes1, 0, componentes, 0, componentes1.length);
+        System.arraycopy(componentes2, 0, componentes, componentes1.length, componentes2.length);
+        System.arraycopy(componentes3, 0, componentes, componentes1.length + componentes2.length, componentes3.length);
+        System.arraycopy(componentes5, 0, componentes, componentes1.length + componentes2.length + componentes3.length, componentes5.length);
+
+        for (Component componente : componentes) {
+            
+            
+            if (componente instanceof JScrollPane) {
+               
+                JScrollPane scrollPane = (JScrollPane) componente; 
+                
+                JViewport viewport = scrollPane.getViewport();
+
+                // Obtener los componentes dentro del viewport
+                Component[] componentesjscroll = viewport.getComponents();
+                
+                for (Component componente2 : componentesjscroll) {
+                    
+                    //System.out.println(componente2.getAccessibleContext().getAccessibleName());
+                    
+                    if (componente2.getAccessibleContext().getAccessibleName() != null && componente2.getAccessibleContext().getAccessibleName().equals(name)) {
+                        miTable = (JTable) componente2;
+                        
+               
+                    }
+                    
+                }
+               
+            }
+        }
+        
+        return miTable;
+    }
     
     
+    
+    public JTable retornarTableMemoria(String name){
+        JTable miTable = null;
+        Component[] componentes = panel6.getComponents();
+        for (Component componente : componentes) {
+            
+            
+            if (componente instanceof JScrollPane) {
+               
+                JScrollPane scrollPane = (JScrollPane) componente; 
+                
+                JViewport viewport = scrollPane.getViewport();
+
+                // Obtener los componentes dentro del viewport
+                Component[] componentesjscroll = viewport.getComponents();
+                
+                for (Component componente2 : componentesjscroll) {
+                    
+                    //System.out.println(componente2.getAccessibleContext().getAccessibleName());
+                    
+                    if (componente2.getAccessibleContext().getAccessibleName() != null && componente2.getAccessibleContext().getAccessibleName().equals(name)) {
+                        miTable = (JTable) componente2;
+                        
+               
+                    }
+                    
+                }
+               
+            }
+        }
+        
+        return miTable;
+    }
     
     /**
      * @param args the command line arguments
@@ -1045,6 +1190,8 @@ public class Interfaz extends javax.swing.JFrame {
         
         
         ModificarTables();
+        
+
         
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
@@ -1063,23 +1210,20 @@ public class Interfaz extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(Interfaz.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
-<<<<<<< HEAD
-=======
+        
+        
        
->>>>>>> Generadordeinstrucciones
-
+        
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
+                
                 new Interfaz().setVisible(true);
             }
         });
-<<<<<<< HEAD
-=======
         
         
         
->>>>>>> Generadordeinstrucciones
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

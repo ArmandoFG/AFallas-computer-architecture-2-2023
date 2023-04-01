@@ -11,25 +11,65 @@ package proyecto1arqui2;
 public class instruccion {
     
        String tipo[] = {"CALC","READ","WRITE"};
-       Random rFuncion = new Random();
+       Random rFuncion;
+       String instrF;
+       String dirF;
+       String datoF;
+
+
+       
+       
+       instruccion(int num_proc)
+               {
+                   this.rFuncion = new Random(System.currentTimeMillis()*num_proc*1000); 
+                   this.instrF = "";
+                   this.dirF = "";
+                   this.datoF = "";
+                   
+                   
+               }
+       public String get_instrF(){
+           
+           return this.instrF;
+           
+           
+       }
+       public String get_dirF(){
+           
+           return this.dirF;
+           
+           
+       }
+       
+       public String get_datoF(){
+           
+           return this.datoF;
+           
+           
+       }
        
        
        public String Construir(){
            
            String instr="";
            
-           instr = GenerarTipo();
+           this.instrF = GenerarTipo();
+           this.dirF = GenerarDir();
+           this.datoF = GenerarDato();
            
            
            
-           if(instr.equals("READ")){
-               instr = instr +" "+ GenerarDir();
+           if(instrF.equals("READ")){
+              // datoF = "";
+               instr = instrF +" "+ dirF;
                return instr;
-           }else if(instr.equals("WRITE")){
-               instr = instr +" "+ GenerarDir() +";"+GenerarDato();
+           }else if(instrF.equals("WRITE")){
+               instr = instrF +" "+ dirF +";"+datoF;
                return instr;
            }else{
-                   return instr;
+                   //dirF="";
+                   //datoF="";
+                   return instrF;
                    }
        }
        
@@ -84,7 +124,6 @@ public class instruccion {
                }
         }
            
-           System.out.println(dato);
            return binarioAHex(dato);
        }
        

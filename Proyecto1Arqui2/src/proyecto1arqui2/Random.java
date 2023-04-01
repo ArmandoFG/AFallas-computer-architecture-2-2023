@@ -10,7 +10,13 @@ package proyecto1arqui2;
  */
 public class Random {
     
-    private double semilla=12345.6789;
+    //private double semilla=12345.6789;
+    
+    private double semilla;
+    
+    Random(double sem){
+        this.semilla = sem;
+    }
     
     public Boolean Bernoulli(double p){
         
