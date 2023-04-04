@@ -54,19 +54,22 @@ public class bus {
                 String valor = cpu1.mm.retornarValorCacheRead(r1);
                 return "c:"+valor;
             }
-        }else if(!cpu2.get_num_cpu().equals(cpu)){
+        }
+        if(!cpu2.get_num_cpu().equals(cpu)){
             String r1 = cpu2.mm.buscarDirCache(dir);
             if(!r1.equals("miss")){
                 String valor = cpu2.mm.retornarValorCacheRead(r1);
                 return "c:"+valor;
             }
-        }else if(!cpu3.get_num_cpu().equals(cpu)){
+        }
+        if(!cpu3.get_num_cpu().equals(cpu)){
             String r1 = cpu3.mm.buscarDirCache(dir);
             if(!r1.equals("miss")){
                 String valor = cpu3.mm.retornarValorCacheRead(r1);
                 return "c:"+valor;
             }
-        }else if(!cpu4.get_num_cpu().equals(cpu)){
+        }
+        if(!cpu4.get_num_cpu().equals(cpu)){
             String r1 = cpu4.mm.buscarDirCache(dir);
             if(!r1.equals("miss")){
                 String valor = cpu4.mm.retornarValorCacheRead(r1);
@@ -87,6 +90,22 @@ public class bus {
     }
     public void set_cpu4(CPU cpu){
         this.cpu4=cpu;
+    }
+    
+    public void invalidarDirWrite(String cpu, String dir){
+        if(!cpu1.get_num_cpu().equals(cpu)){
+            cpu1.mm.CambiarDirCachewrite(dir);           
+        }
+        if(!cpu2.get_num_cpu().equals(cpu)){
+            cpu2.mm.CambiarDirCachewrite(dir); 
+        }
+        if(!cpu3.get_num_cpu().equals(cpu)){
+            cpu3.mm.CambiarDirCachewrite(dir); 
+        }
+        if(!cpu4.get_num_cpu().equals(cpu)){
+            cpu4.mm.CambiarDirCachewrite(dir); 
+        }
+        
     }
     
     

@@ -6,6 +6,7 @@ package proyecto1arqui2;
 
 import java.awt.Component;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.JViewport;
@@ -16,7 +17,13 @@ import javax.swing.JViewport;
  */
 public class Interfaz extends javax.swing.JFrame {
     
-
+    public boolean pausa = false;
+    boolean pasoApaso = false;
+    boolean agregarInstr = false;
+    String instr = "";
+    String dir = "";
+    String dat = "";
+    String CPU = "";
 
     /**
      * Creates new form Interfaz
@@ -875,15 +882,20 @@ public class Interfaz extends javax.swing.JFrame {
                 .addGap(24, 24, 24))
         );
 
-        jLabel1.setText("CPU 0");
+        jLabel1.setText("CPU 1");
 
-        jLabel2.setText("CPU 1");
+        jLabel2.setText("CPU 2");
 
-        jLabel3.setText("CPU 2");
+        jLabel3.setText("CPU 3");
 
-        jLabel4.setText("CPU 3");
+        jLabel4.setText("CPU 4");
 
         jButton1.setText("Empezar");
+        jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton1MouseClicked(evt);
+            }
+        });
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -891,17 +903,27 @@ public class Interfaz extends javax.swing.JFrame {
         });
 
         jButton2.setText("Detener");
+        jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton2MouseClicked(evt);
+            }
+        });
 
         jButton3.setText("Paso a Paso");
+        jButton3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton3MouseClicked(evt);
+            }
+        });
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "CPU 0", "CPU 1", "CPU 2", "CPU 3" }));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "CPU 1", "CPU 2", "CPU 3", "CPU 4" }));
         jComboBox1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBox1ActionPerformed(evt);
             }
         });
 
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Calc", "Read", "Write" }));
+        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "CALC", "READ", "WRITE" }));
         jComboBox2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBox2ActionPerformed(evt);
@@ -918,6 +940,11 @@ public class Interfaz extends javax.swing.JFrame {
         });
 
         jButton4.setText("Agregar");
+        jButton4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton4MouseClicked(evt);
+            }
+        });
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
@@ -1057,6 +1084,73 @@ public class Interfaz extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton4ActionPerformed
 
+    private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
+       this.pausa = true;
+    }//GEN-LAST:event_jButton2MouseClicked
+
+    private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
+        this.pausa = false;
+    }//GEN-LAST:event_jButton1MouseClicked
+
+    private void jButton3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton3MouseClicked
+        pasoApaso = true;
+    }//GEN-LAST:event_jButton3MouseClicked
+
+    private void jButton4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton4MouseClicked
+        
+        if(jComboBox2.getSelectedItem().toString().equals("WRITE")){
+            if(jTextField1.getText().equals("Dato")){
+                JOptionPane.showMessageDialog(null, "Debe agregar un dato", "Error", JOptionPane.WARNING_MESSAGE);
+            }else{
+                instr = jComboBox2.getSelectedItem().toString();
+                dir = jComboBox3.getSelectedItem().toString();
+                dat = jTextField1.getText();
+                CPU = String.valueOf(jComboBox1.getSelectedItem().toString().charAt(jComboBox1.getSelectedItem().toString().length() - 1));
+                agregarInstr = true;
+            }
+        }else if(jComboBox2.getSelectedItem().toString().equals("READ")){
+            instr = jComboBox2.getSelectedItem().toString();
+            dir = jComboBox3.getSelectedItem().toString();
+            CPU = String.valueOf(jComboBox1.getSelectedItem().toString().charAt(jComboBox1.getSelectedItem().toString().length() - 1));
+            agregarInstr = true;
+        }else{
+            instr = jComboBox2.getSelectedItem().toString();
+            CPU = String.valueOf(jComboBox1.getSelectedItem().toString().charAt(jComboBox1.getSelectedItem().toString().length() - 1));
+            agregarInstr = true;
+        }
+    /*
+        System.out.println("instr: "+instr);
+        System.out.println("dir: "+dir);
+        System.out.println("dat: "+dat);
+        System.out.println("CPU: "+CPU);*/
+   
+    }//GEN-LAST:event_jButton4MouseClicked
+
+    public String get_instr(){
+        return instr;
+    }
+    public String get_dir(){
+        return dir;
+    }
+    public String get_dat(){
+        return dat;
+    }
+    public String get_CPU(){
+        return CPU;
+    }
+    public boolean get_banderaAgregarInstr(){
+        return agregarInstr;
+    }
+    public void set_banderaAgregarInstr(boolean bandera){
+        agregarInstr=bandera;
+    }
+    public boolean get_BanderaAgregarinstr(){
+        return agregarInstr;
+    }
+    
+    public boolean get_BanderaPasoApaso(){
+        return pasoApaso;
+    }
     
     public void ModificarTables(){
         
