@@ -42,6 +42,7 @@ public class Proyecto1Arqui2 {
         cpu4= new CPU("4",ui,busCPU,mem);
         cpu4.set_timepoInst(TiempoDuración);
         
+        
         busCPU.set_cpu1(cpu1);
         busCPU.set_cpu2(cpu2);
         busCPU.set_cpu3(cpu3);
@@ -50,10 +51,10 @@ public class Proyecto1Arqui2 {
   
         
         
-       
         cpu1.start();
+        cpu2.start();
         
-        cpu2.start();/*
+        /*
         cpu3.start();
         cpu4.start();
       */

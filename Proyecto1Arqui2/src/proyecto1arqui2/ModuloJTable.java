@@ -174,7 +174,7 @@ public class ModuloJTable {
                     CambiarValorBloquedat(this.bloque2,dat);
                 }
             }else if(bloque1.getValueAt(0, 1).equals("M") || bloque1.getValueAt(0, 1).equals("O")){
-                mem.CambiarValorEnDir(dir, (String) this.bloque1.getValueAt(2, 1));
+                mem.CambiarValorEnDir((String) this.bloque1.getValueAt(1, 1), (String) this.bloque1.getValueAt(2, 1));
                 if(procedencia.equals("m")){
                     CambiarValorBloqueEstado(this.bloque1,"E");
                     CambiarValorBloquedir(this.bloque1,dir);
@@ -185,7 +185,7 @@ public class ModuloJTable {
                     CambiarValorBloquedat(this.bloque1,dat);
                 }
             }else if(bloque2.getValueAt(0, 1).equals("M") || bloque2.getValueAt(0, 1).equals("O")){
-                mem.CambiarValorEnDir(dir, (String) this.bloque2.getValueAt(2, 1));
+                mem.CambiarValorEnDir((String) this.bloque2.getValueAt(1, 1), (String) this.bloque2.getValueAt(2, 1));
                 if(procedencia.equals("m")){
                     CambiarValorBloqueEstado(this.bloque2,"E");
                     CambiarValorBloquedir(this.bloque2,dir);
@@ -258,7 +258,7 @@ public class ModuloJTable {
                     CambiarValorBloquedat(this.bloque4,dat);
                 }
             }else if(bloque3.getValueAt(0, 1).equals("M") || bloque3.getValueAt(0, 1).equals("O")){
-                mem.CambiarValorEnDir(dir, (String) this.bloque3.getValueAt(2, 1));
+                mem.CambiarValorEnDir((String) this.bloque3.getValueAt(1, 1), (String) this.bloque3.getValueAt(2, 1));
                 if(procedencia.equals("m")){
                     CambiarValorBloqueEstado(this.bloque3,"E");
                     CambiarValorBloquedir(this.bloque3,dir);
@@ -269,7 +269,7 @@ public class ModuloJTable {
                     CambiarValorBloquedat(this.bloque3,dat);
                 }
             }else if(bloque4.getValueAt(0, 1).equals("M") || bloque4.getValueAt(0, 1).equals("O")){
-                mem.CambiarValorEnDir(dir, (String) this.bloque4.getValueAt(2, 1));
+                mem.CambiarValorEnDir((String) this.bloque4.getValueAt(1, 1), (String) this.bloque4.getValueAt(2, 1));
                 if(procedencia.equals("m")){
                     CambiarValorBloqueEstado(this.bloque4,"E");
                     CambiarValorBloquedir(this.bloque4,dir);
@@ -284,9 +284,277 @@ public class ModuloJTable {
         
     }
     
+    public String IngresarDatoJTableWrite(String dir, String dat, String last_dat){
+        if(last_dat.equals("0")){
+            if(bloque1.getValueAt(1, 1)!= null && bloque1.getValueAt(1, 1).equals(dir)){
+                if(bloque1.getValueAt(0, 1).equals("I")){
+                    CambiarValorBloqueEstado(this.bloque1,"M");
+                    CambiarValorBloquedir(this.bloque1,dir);
+                    CambiarValorBloquedat(this.bloque1,dat);
+                    return "nada";
+                }else if(bloque1.getValueAt(0, 1).equals("S")){
+                    CambiarValorBloqueEstado(this.bloque1,"M");
+                    CambiarValorBloquedir(this.bloque1,dir);
+                    CambiarValorBloquedat(this.bloque1,dat);
+                    return "invalidar";
+                }else if(bloque1.getValueAt(0, 1).equals("E")){
+                    CambiarValorBloqueEstado(this.bloque1,"M");
+                    CambiarValorBloquedir(this.bloque1,dir);
+                    CambiarValorBloquedat(this.bloque1,dat);
+                    return "nada";
+                }else if(bloque1.getValueAt(0, 1).equals("M")){
+                    CambiarValorBloqueEstado(this.bloque1,"M");
+                    CambiarValorBloquedir(this.bloque1,dir);
+                    CambiarValorBloquedat(this.bloque1,dat);
+                    return "nada";
+                }else if(bloque1.getValueAt(0, 1).equals("O")){
+                    CambiarValorBloqueEstado(this.bloque1,"M");
+                    CambiarValorBloquedir(this.bloque1,dir);
+                    CambiarValorBloquedat(this.bloque1,dat);
+                    return "invalidar";
+                }
+
+            }else if(bloque2.getValueAt(1, 1)!= null && bloque2.getValueAt(1, 1).equals(dir)){
+                if(bloque2.getValueAt(0, 1).equals("I")){
+                    CambiarValorBloqueEstado(this.bloque2,"M");
+                    CambiarValorBloquedir(this.bloque2,dir);
+                    CambiarValorBloquedat(this.bloque2,dat);
+                    return "nada";
+                }else if(bloque2.getValueAt(0, 1).equals("S")){
+                    CambiarValorBloqueEstado(this.bloque2,"M");
+                    CambiarValorBloquedir(this.bloque2,dir);
+                    CambiarValorBloquedat(this.bloque2,dat);
+                    return "invalidar";
+                }else if(bloque2.getValueAt(0, 1).equals("E")){
+                    CambiarValorBloqueEstado(this.bloque2,"M");
+                    CambiarValorBloquedir(this.bloque2,dir);
+                    CambiarValorBloquedat(this.bloque2,dat);
+                    return "nada";
+                }else if(bloque2.getValueAt(0, 1).equals("M")){
+                    CambiarValorBloqueEstado(this.bloque2,"M");
+                    CambiarValorBloquedir(this.bloque2,dir);
+                    CambiarValorBloquedat(this.bloque2,dat);
+                    return "nada";
+                }else if(bloque2.getValueAt(0, 1).equals("O")){
+                    CambiarValorBloqueEstado(this.bloque2,"M");
+                    CambiarValorBloquedir(this.bloque2,dir);
+                    CambiarValorBloquedat(this.bloque2,dat);
+                    return "invalidar";
+                }
+
+            }else if(bloque1.getValueAt(1, 1)==null){
+                CambiarValorBloqueEstado(this.bloque1,"M");
+                CambiarValorBloquedir(this.bloque1,dir);
+                CambiarValorBloquedat(this.bloque1,dat);
+                return "invalidar";
+            }else if(bloque2.getValueAt(1, 1)==null){
+                CambiarValorBloqueEstado(this.bloque2,"M");
+                CambiarValorBloquedir(this.bloque2,dir);
+                CambiarValorBloquedat(this.bloque2,dat);
+                return "invalidar";
+            }else{
+                if(bloque1.getValueAt(0, 1).equals("I")){
+                    CambiarValorBloqueEstado(this.bloque1,"M");
+                    CambiarValorBloquedir(this.bloque1,dir);
+                    CambiarValorBloquedat(this.bloque1,dat);
+                    return "invalidar";
+                }else if(bloque2.getValueAt(0, 1).equals("I")){
+                    CambiarValorBloqueEstado(this.bloque2,"M");
+                    CambiarValorBloquedir(this.bloque2,dir);
+                    CambiarValorBloquedat(this.bloque2,dat);
+                    return "invalidar";
+                }else if(bloque1.getValueAt(0, 1).equals("S")){
+                    CambiarValorBloqueEstado(this.bloque1,"M");
+                    CambiarValorBloquedir(this.bloque1,dir);
+                    CambiarValorBloquedat(this.bloque1,dat);
+                    return "invalidar";
+                }else if(bloque2.getValueAt(0, 1).equals("S")){
+                    CambiarValorBloqueEstado(this.bloque2,"M");
+                    CambiarValorBloquedir(this.bloque2,dir);
+                    CambiarValorBloquedat(this.bloque2,dat);
+                    return "invalidar";
+                }else if(bloque1.getValueAt(0, 1).equals("E")){
+                    CambiarValorBloqueEstado(this.bloque1,"M");
+                    CambiarValorBloquedir(this.bloque1,dir);
+                    CambiarValorBloquedat(this.bloque1,dat);
+                    return "invalidar";
+                }else if(bloque2.getValueAt(0, 1).equals("E")){
+                    CambiarValorBloqueEstado(this.bloque2,"M");
+                    CambiarValorBloquedir(this.bloque2,dir);
+                    CambiarValorBloquedat(this.bloque2,dat);
+                    return "invalidar";
+                }else if(bloque1.getValueAt(0, 1).equals("M")){
+                    mem.CambiarValorEnDir((String) this.bloque1.getValueAt(1, 1), (String) this.bloque1.getValueAt(2, 1));
+                    CambiarValorBloqueEstado(this.bloque1,"M");
+                    CambiarValorBloquedir(this.bloque1,dir);
+                    CambiarValorBloquedat(this.bloque1,dat);
+                    return "invalidar";
+                }else if(bloque2.getValueAt(0, 1).equals("M")){
+                    mem.CambiarValorEnDir((String) this.bloque2.getValueAt(1, 1), (String) this.bloque2.getValueAt(2, 1));                    
+                    CambiarValorBloqueEstado(this.bloque2,"M");
+                    CambiarValorBloquedir(this.bloque2,dir);
+                    CambiarValorBloquedat(this.bloque2,dat);
+                    return "invalidar";
+                }else if(bloque1.getValueAt(0, 1).equals("O")){
+                    mem.CambiarValorEnDir((String) this.bloque1.getValueAt(1, 1), (String) this.bloque1.getValueAt(2, 1));
+                    CambiarValorBloqueEstado(this.bloque1,"M");
+                    CambiarValorBloquedir(this.bloque1,dir);
+                    CambiarValorBloquedat(this.bloque1,dat);
+                    return "invalidar";
+                }
+                else if(bloque2.getValueAt(0, 1).equals("O")){
+                    mem.CambiarValorEnDir((String) this.bloque2.getValueAt(1, 1), (String) this.bloque2.getValueAt(2, 1));                    
+                    CambiarValorBloqueEstado(this.bloque2,"M");
+                    CambiarValorBloquedir(this.bloque2,dir);
+                    CambiarValorBloquedat(this.bloque2,dat);
+                    return "invalidar";
+                }
+            }
+        }else {
+            if(bloque3.getValueAt(1, 1)!= null && bloque3.getValueAt(1, 1).equals(dir)){
+                if(bloque3.getValueAt(0, 1).equals("I")){
+                    CambiarValorBloqueEstado(this.bloque3,"M");
+                    CambiarValorBloquedir(this.bloque3,dir);
+                    CambiarValorBloquedat(this.bloque3,dat);
+                    return "nada";
+                }else if(bloque3.getValueAt(0, 1).equals("S")){
+                    CambiarValorBloqueEstado(this.bloque3,"M");
+                    CambiarValorBloquedir(this.bloque3,dir);
+                    CambiarValorBloquedat(this.bloque3,dat);
+                    return "invalidar";
+                }else if(bloque3.getValueAt(0, 1).equals("E")){
+                    CambiarValorBloqueEstado(this.bloque3,"M");
+                    CambiarValorBloquedir(this.bloque3,dir);
+                    CambiarValorBloquedat(this.bloque3,dat);
+                    return "nada";
+                }else if(bloque3.getValueAt(0, 1).equals("M")){
+                    CambiarValorBloqueEstado(this.bloque3,"M");
+                    CambiarValorBloquedir(this.bloque3,dir);
+                    CambiarValorBloquedat(this.bloque3,dat);
+                    return "nada";
+                }else if(bloque3.getValueAt(0, 1).equals("O")){
+                    CambiarValorBloqueEstado(this.bloque3,"M");
+                    CambiarValorBloquedir(this.bloque3,dir);
+                    CambiarValorBloquedat(this.bloque3,dat);
+                    return "invalidar";
+                }
+            
+            }else if(bloque4.getValueAt(1, 1)!= null && bloque4.getValueAt(1, 1).equals(dir)){
+                if(bloque4.getValueAt(0, 1).equals("I")){
+                    CambiarValorBloqueEstado(this.bloque4,"M");
+                    CambiarValorBloquedir(this.bloque4,dir);
+                    CambiarValorBloquedat(this.bloque4,dat);
+                    return "nada";
+                }else if(bloque4.getValueAt(0, 1).equals("S")){
+                    CambiarValorBloqueEstado(this.bloque4,"M");
+                    CambiarValorBloquedir(this.bloque4,dir);
+                    CambiarValorBloquedat(this.bloque4,dat);
+                    return "invalidar";
+                }else if(bloque4.getValueAt(0, 1).equals("E")){
+                    CambiarValorBloqueEstado(this.bloque4,"M");
+                    CambiarValorBloquedir(this.bloque4,dir);
+                    CambiarValorBloquedat(this.bloque4,dat);
+                    return "nada";
+                }else if(bloque4.getValueAt(0, 1).equals("M")){
+                    CambiarValorBloqueEstado(this.bloque4,"M");
+                    CambiarValorBloquedir(this.bloque4,dir);
+                    CambiarValorBloquedat(this.bloque4,dat);
+                    return "nada";
+                }else if(bloque4.getValueAt(0, 1).equals("O")){
+                    CambiarValorBloqueEstado(this.bloque4,"M");
+                    CambiarValorBloquedir(this.bloque4,dir);
+                    CambiarValorBloquedat(this.bloque4,dat);
+                    return "invalidar";
+                }
+
+            }else if(bloque3.getValueAt(1, 1)==null){
+                CambiarValorBloqueEstado(this.bloque3,"M");
+                CambiarValorBloquedir(this.bloque3,dir);
+                CambiarValorBloquedat(this.bloque3,dat);
+                return "invalidar";
+            }else if(bloque4.getValueAt(1, 1)==null){
+                CambiarValorBloqueEstado(this.bloque4,"M");
+                CambiarValorBloquedir(this.bloque4,dir);
+                CambiarValorBloquedat(this.bloque4,dat);
+                return "invalidar";
+            }else{
+                if(bloque3.getValueAt(0, 1).equals("I")){
+                    CambiarValorBloqueEstado(this.bloque3,"M");
+                    CambiarValorBloquedir(this.bloque3,dir);
+                    CambiarValorBloquedat(this.bloque3,dat);
+                    return "invalidar";
+                }else if(bloque4.getValueAt(0, 1).equals("I")){
+                    CambiarValorBloqueEstado(this.bloque4,"M");
+                    CambiarValorBloquedir(this.bloque4,dir);
+                    CambiarValorBloquedat(this.bloque4,dat);
+                    return "invalidar";
+                }else if(bloque3.getValueAt(0, 1).equals("S")){
+                    CambiarValorBloqueEstado(this.bloque3,"M");
+                    CambiarValorBloquedir(this.bloque3,dir);
+                    CambiarValorBloquedat(this.bloque3,dat);
+                    return "invalidar";
+                }else if(bloque4.getValueAt(0, 1).equals("S")){
+                    CambiarValorBloqueEstado(this.bloque4,"M");
+                    CambiarValorBloquedir(this.bloque4,dir);
+                    CambiarValorBloquedat(this.bloque4,dat);
+                    return "invalidar";
+                }else if(bloque3.getValueAt(0, 1).equals("E")){
+                    CambiarValorBloqueEstado(this.bloque3,"M");
+                    CambiarValorBloquedir(this.bloque3,dir);
+                    CambiarValorBloquedat(this.bloque3,dat);
+                    return "invalidar";
+                }else if(bloque4.getValueAt(0, 1).equals("E")){
+                    CambiarValorBloqueEstado(this.bloque4,"M");
+                    CambiarValorBloquedir(this.bloque4,dir);
+                    CambiarValorBloquedat(this.bloque4,dat);
+                    return "invalidar";
+                
+                }else if(bloque3.getValueAt(0, 1).equals("M")){
+                    mem.CambiarValorEnDir((String) this.bloque3.getValueAt(1, 1), (String) this.bloque3.getValueAt(2, 1));                    
+                    CambiarValorBloqueEstado(this.bloque3,"M");
+                    CambiarValorBloquedir(this.bloque3,dir);
+                    CambiarValorBloquedat(this.bloque3,dat);
+                    return "invalidar";
+                }else if(bloque4.getValueAt(0, 1).equals("M")){
+                    mem.CambiarValorEnDir((String) this.bloque4.getValueAt(1, 1), (String) this.bloque4.getValueAt(2, 1));                    
+                    CambiarValorBloqueEstado(this.bloque4,"M");
+                    CambiarValorBloquedir(this.bloque4,dir);
+                    CambiarValorBloquedat(this.bloque4,dat);
+                    return "invalidar";
+                }else if(bloque3.getValueAt(0, 1).equals("O")){
+                    mem.CambiarValorEnDir((String) this.bloque3.getValueAt(1, 1), (String) this.bloque3.getValueAt(2, 1));                    
+                    CambiarValorBloqueEstado(this.bloque3,"M");
+                    CambiarValorBloquedir(this.bloque3,dir);
+                    CambiarValorBloquedat(this.bloque3,dat);
+                    return "invalidar";
+                }else if(bloque4.getValueAt(0, 1).equals("O")){
+                    mem.CambiarValorEnDir((String) this.bloque4.getValueAt(1, 1), (String) this.bloque4.getValueAt(2, 1));                    
+                    CambiarValorBloqueEstado(this.bloque4,"M");
+                    CambiarValorBloquedir(this.bloque4,dir);
+                    CambiarValorBloquedat(this.bloque4,dat);
+                    return "invalidar";
+                }
+        }
+
+
+    }
+                    return null;
+
+}
     
-    
-    
-    
-    
+    public void CambiarDirCachewrite(String dir){
+        if(bloque1.getValueAt(1, 1)!= null && bloque1.getValueAt(1, 1).equals(dir)){
+            CambiarValorBloqueEstado(this.bloque1,"I");
+
+        }else if(bloque2.getValueAt(1, 1)!= null && bloque2.getValueAt(1, 1).equals(dir)){
+            CambiarValorBloqueEstado(this.bloque2,"I");
+        }
+        else if(bloque3.getValueAt(1, 1)!= null && bloque3.getValueAt(1, 1).equals(dir)){
+            CambiarValorBloqueEstado(this.bloque3,"I");
+        }else if(bloque4.getValueAt(1, 1)!= null && bloque4.getValueAt(1, 1).equals(dir)){
+            CambiarValorBloqueEstado(this.bloque4,"I");
+
+        }
+        
+    }
 }

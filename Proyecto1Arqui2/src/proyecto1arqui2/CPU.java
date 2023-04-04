@@ -40,30 +40,75 @@ public class CPU extends Thread {
     bus busCPU;
     memoria mem;
     
+    boolean banderapasoaPaso=false;
+    boolean banderaAgregarInstr=false;
+    
+
+    
     
     @Override
 	public void run() {
             
             while(true){
-                try {
-                    Thread.sleep(timepoInst);
-                } catch (InterruptedException ex) {
-                    Logger.getLogger(CPU.class.getName()).log(Level.SEVERE, null, ex);
-                }
                 
-                try {
-                   
-                        if(rFuncion.Bernoulli(0.3333)==true){
-                        
-                            GenerarinstrCPU();
-                            this.Moesi();
-                            ui.cambiartexto("-------", Ejecutando);
-                            this.banderaInstr=true;
+                //System.out.println(ui.pausa);
+                
+                if(ui.pausa== false){
+                    try {
+                        Thread.sleep(timepoInst);
+                    } catch (InterruptedException ex) {
+                        Logger.getLogger(CPU.class.getName()).log(Level.SEVERE, null, ex);
+                    }
 
+                    try {
+
+                            if(rFuncion.Bernoulli(0.3333)==true){
+
+                                GenerarinstrCPU();
+                                this.Moesi();
+                                ui.cambiartexto("-------", Ejecutando);
+                                this.banderaInstr=true;
+
+                            }
+
+                    } catch (InterruptedException ex) {
+                        Logger.getLogger(CPU.class.getName()).log(Level.SEVERE, null, ex);
+                    }
+                }else{
+                    try {
+                        if(banderapasoaPaso == true){
+                            if(rFuncion.Bernoulli(0.3333)==true){
+
+                                GenerarinstrCPU();
+                                this.Moesi();
+                                ui.cambiartexto("-------", Ejecutando);
+                                this.banderaInstr=true;
+
+                            }
+                            banderapasoaPaso = false;
+                        }else if(banderaAgregarInstr == true){
+                            System.out.println("Entra:"+get_num_cpu());
+                            if(this.get_num_cpu().equals(ui.get_CPU())){
+                                instrF=ui.get_instr();
+                                dirF=ui.get_dir();
+                                datoF=ui.get_dat();
+                                Dat=instrF+" "+dirF+";"+datoF;
+                                this.Moesi();
+                                ui.cambiartexto("-------", Ejecutando);
+                            }
+                            banderaAgregarInstr = false;
                         }
-                    
-                } catch (InterruptedException ex) {
-                    Logger.getLogger(CPU.class.getName()).log(Level.SEVERE, null, ex);
+                        Thread.sleep(1000);
+                        if(ui.get_BanderaPasoApaso()==true){
+                            banderapasoaPaso = true;
+                            ui.pasoApaso = false;
+                        }else if(ui.get_banderaAgregarInstr()==true){
+                            banderaAgregarInstr = true;
+                            ui.set_banderaAgregarInstr(false);
+                        }
+                    } catch (InterruptedException ex) {
+                        Logger.getLogger(CPU.class.getName()).log(Level.SEVERE, null, ex);
+                    }
                 }
             }
         }
@@ -153,10 +198,15 @@ public class CPU extends Thread {
                 char primerChar = Valor.charAt(0);
                 String dato = Valor.substring(2, Valor.length());
                 mm.IngresarDatoJTableRead(dirF, dato, String.valueOf(ultimoChar), String.valueOf(primerChar));
+                this.Dat_pas = this.Dat;
+                ui.cambiartexto(Dat_pas, Ejecutado);
 
-
-            }else {
-                
+            }
+        }else if(this.instrF.equals("WRITE")){
+            char ultimoChar = dirF.charAt(dirF.length() - 1);
+            String accion = mm.IngresarDatoJTableWrite(dirF, datoF, String.valueOf(ultimoChar));
+            if(accion.equals("invalidar")){
+                busCPU.invalidarDirWrite(this.get_num_cpu(), dirF);
             }
         }
         this.Dat_pas = this.Dat;
