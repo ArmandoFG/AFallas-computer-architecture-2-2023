@@ -47,7 +47,7 @@ public class bus {
         
     }
     
-    public String preguntarReadDir(String cpu, String dir){
+    public String preguntarReadDir(String cpu, String dir) throws InterruptedException{
         if(!cpu1.get_num_cpu().equals(cpu)){
             String r1 = cpu1.mm.buscarDirCache(dir);
             if(!r1.equals("miss")){

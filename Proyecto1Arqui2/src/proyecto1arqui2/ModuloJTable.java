@@ -108,7 +108,7 @@ public class ModuloJTable {
         }
     }
     
-    public void IngresarDatoJTableRead(String dir, String dat, String last_dat, String procedencia){
+    public void IngresarDatoJTableRead(String dir, String dat, String last_dat, String procedencia) throws InterruptedException{
         
         if(last_dat.equals("0")){
             if(bloque1.getValueAt(1, 1)==null || bloque1.getValueAt(0, 1).equals("I")){
@@ -284,7 +284,7 @@ public class ModuloJTable {
         
     }
     
-    public String IngresarDatoJTableWrite(String dir, String dat, String last_dat){
+    public String IngresarDatoJTableWrite(String dir, String dat, String last_dat) throws InterruptedException{
         if(last_dat.equals("0")){
             if(bloque1.getValueAt(1, 1)!= null && bloque1.getValueAt(1, 1).equals(dir)){
                 if(bloque1.getValueAt(0, 1).equals("I")){

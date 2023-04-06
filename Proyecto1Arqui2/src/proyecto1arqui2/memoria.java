@@ -14,15 +14,18 @@ public class memoria {
     
     JTable Mem;
     Interfaz ui;
+    int tiempo;
     
-    memoria(Interfaz ui){
+    memoria(Interfaz ui,int tiempo){
         this.ui=ui;
         this.Mem=ui.retornarTableMemoria("TablaMem");
+        this.tiempo = tiempo;
         
     }
     
-    public String BuscarDir(String dir){
+    public String BuscarDir(String dir) throws InterruptedException{
         
+        Thread.sleep(tiempo);
         if(dir.equals("000")){
             return "m:"+(String) this.Mem.getValueAt(0, 0);
         }else if(dir.equals("001")){
@@ -44,7 +47,8 @@ public class memoria {
         
     } 
     
-    public void CambiarValorEnDir(String dir, String Dat){
+    public void CambiarValorEnDir(String dir, String Dat) throws InterruptedException{
+        Thread.sleep(tiempo);
         if(dir.equals("000")){
             this.Mem.setValueAt(Dat, 0, 0);
         }else if(dir.equals("001")){

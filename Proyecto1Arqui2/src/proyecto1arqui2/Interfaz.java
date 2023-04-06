@@ -17,7 +17,7 @@ import javax.swing.JViewport;
  */
 public class Interfaz extends javax.swing.JFrame {
     
-    public boolean pausa = false;
+    public boolean pausa = true;
     boolean pasoApaso = false;
     boolean agregarInstr = false;
     String instr = "";
@@ -112,6 +112,10 @@ public class Interfaz extends javax.swing.JFrame {
         jSeparator1 = new javax.swing.JSeparator();
         jTextField1 = new javax.swing.JTextField();
         jButton4 = new javax.swing.JButton();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel22 = new javax.swing.JLabel();
+        jLabel23 = new javax.swing.JLabel();
+        jLabel24 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Arqui 2");
@@ -124,7 +128,7 @@ public class Interfaz extends javax.swing.JFrame {
 
         jTable6.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {"Estado", null},
+                {"Estado Bloque1", null},
                 {"Dirección", null},
                 {"Dato", null}
             },
@@ -154,7 +158,7 @@ public class Interfaz extends javax.swing.JFrame {
 
         jTable7.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {"Estado", null},
+                {"Estado Bloque2", null},
                 {"Dirección", null},
                 {"Dato", null}
             },
@@ -184,7 +188,7 @@ public class Interfaz extends javax.swing.JFrame {
 
         jTable8.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {"Estado", null},
+                {"Estado Bloque3", null},
                 {"Dirección", null},
                 {"Dato", null}
             },
@@ -214,7 +218,7 @@ public class Interfaz extends javax.swing.JFrame {
 
         jTable9.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {"Estado", null},
+                {"Estado Bloque4", null},
                 {"Dirección", null},
                 {"Dato", null}
             },
@@ -303,7 +307,7 @@ public class Interfaz extends javax.swing.JFrame {
 
         jTable2.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {"Estado", null},
+                {"Estado Bloque2", null},
                 {"Dirección", null},
                 {"Dato", null}
             },
@@ -333,7 +337,7 @@ public class Interfaz extends javax.swing.JFrame {
 
         jTable3.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {"Estado", null},
+                {"Estado Bloque1", null},
                 {"Dirección", null},
                 {"Dato", null}
             },
@@ -363,7 +367,7 @@ public class Interfaz extends javax.swing.JFrame {
 
         jTable4.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {"Estado", null},
+                {"Estado Bloque4", null},
                 {"Dirección", null},
                 {"Dato", null}
             },
@@ -393,7 +397,7 @@ public class Interfaz extends javax.swing.JFrame {
 
         jTable5.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {"Estado", null},
+                {"Estado Bloque3", null},
                 {"Dirección", null},
                 {"Dato", null}
             },
@@ -452,7 +456,7 @@ public class Interfaz extends javax.swing.JFrame {
                             .addComponent(jLabel6)
                             .addComponent(jLabel5)
                             .addComponent(jLabel8))
-                        .addGap(0, 1, Short.MAX_VALUE)))
+                        .addGap(1, 1, 1)))
                 .addContainerGap())
         );
         panel2Layout.setVerticalGroup(
@@ -484,7 +488,7 @@ public class Interfaz extends javax.swing.JFrame {
 
         jTable14.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {"Estado", null},
+                {"Estado Bloque1", null},
                 {"Dirección", null},
                 {"Dato", null}
             },
@@ -513,7 +517,7 @@ public class Interfaz extends javax.swing.JFrame {
 
         jTable15.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {"Estado", null},
+                {"Estado Bloque2", null},
                 {"Dirección", null},
                 {"Dato", null}
             },
@@ -543,7 +547,7 @@ public class Interfaz extends javax.swing.JFrame {
 
         jTable16.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {"Estado", null},
+                {"Estado Bloque3", null},
                 {"Dirección", null},
                 {"Dato", null}
             },
@@ -573,7 +577,7 @@ public class Interfaz extends javax.swing.JFrame {
 
         jTable17.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {"Estado", null},
+                {"Estado Bloque4", null},
                 {"Dirección", null},
                 {"Dato", null}
             },
@@ -662,7 +666,7 @@ public class Interfaz extends javax.swing.JFrame {
 
         jTable10.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {"Estado", null},
+                {"Estado Bloque1", null},
                 {"Dirección", null},
                 {"Dato", null}
             },
@@ -692,7 +696,7 @@ public class Interfaz extends javax.swing.JFrame {
 
         jTable11.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {"Estado", null},
+                {"Estado Bloque2", null},
                 {"Dirección", null},
                 {"Dato", null}
             },
@@ -722,7 +726,7 @@ public class Interfaz extends javax.swing.JFrame {
 
         jTable12.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {"Estado", null},
+                {"Estado Bloque3", null},
                 {"Dirección", null},
                 {"Dato", null}
             },
@@ -752,7 +756,7 @@ public class Interfaz extends javax.swing.JFrame {
 
         jTable13.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {"Estado", null},
+                {"Estado Bloque4", null},
                 {"Dirección", null},
                 {"Dato", null}
             },
@@ -841,7 +845,7 @@ public class Interfaz extends javax.swing.JFrame {
 
         jTable18.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {"10", "11", "02", "20", "32", "12", "4", "53"}
+                {"0000", "0000", "0000", "0000", "0000", "0000", "0000", "0000"}
             },
             new String [] {
                 "Bloque 0", "Bloque 1", "Bloque 2", "Bloque 3", "Bloque 4", "Bloque 5", "Bloque 6", "Bloque 7"
@@ -930,7 +934,7 @@ public class Interfaz extends javax.swing.JFrame {
             }
         });
 
-        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "0000", "0001", "0010", "0011", "0100", "0101", "0110", "0111" }));
+        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "000", "001", "010", "011", "100", "101", "110", "111" }));
 
         jTextField1.setText("Dato");
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
@@ -950,6 +954,22 @@ public class Interfaz extends javax.swing.JFrame {
                 jButton4ActionPerformed(evt);
             }
         });
+
+        jLabel21.setVisible(false);
+        jLabel21.setFont(new java.awt.Font("Yu Gothic UI Semilight", 1, 24)); // NOI18N
+        jLabel21.setText("MISS CPU1");
+
+        jLabel22.setVisible(false);
+        jLabel22.setFont(new java.awt.Font("Yu Gothic UI Semilight", 1, 24)); // NOI18N
+        jLabel22.setText("MISS CPU2");
+
+        jLabel23.setVisible(false);
+        jLabel23.setFont(new java.awt.Font("Yu Gothic UI Semilight", 1, 24)); // NOI18N
+        jLabel23.setText("MISS CPU3");
+
+        jLabel24.setVisible(false);
+        jLabel24.setFont(new java.awt.Font("Yu Gothic UI Semilight", 1, 24)); // NOI18N
+        jLabel24.setText("MISS CPU4");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -972,10 +992,6 @@ public class Interfaz extends javax.swing.JFrame {
                         .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGap(3, 3, 3)))
                 .addGap(106, 106, 106))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGap(83, 83, 83)
-                .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(95, 95, 95))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(19, 19, 19)
                 .addComponent(jComboBox2, 0, 1, Short.MAX_VALUE)
@@ -984,6 +1000,21 @@ public class Interfaz extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(25, 25, 25))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel21))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(83, 83, 83)
+                        .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel24)
+                            .addComponent(jLabel23)
+                            .addComponent(jLabel22))))
+                .addGap(95, 95, 95))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1005,6 +1036,14 @@ public class Interfaz extends javax.swing.JFrame {
                     .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(jButton4)
+                .addGap(31, 31, 31)
+                .addComponent(jLabel21)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel22)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel23)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel24)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -1152,6 +1191,29 @@ public class Interfaz extends javax.swing.JFrame {
         return pasoApaso;
     }
     
+    public void setVisibilityMissTrue(String CPU){
+        if(CPU.equals("1")){
+            jLabel21.setVisible(true);
+        }else if(CPU.equals("2")){
+            jLabel22.setVisible(true);
+        }else if(CPU.equals("3")){
+            jLabel23.setVisible(true);
+        }else if(CPU.equals("4")){
+            jLabel4.setVisible(true);
+        }
+    }
+    public void setVisibilityMissFalse(String CPU){
+        if(CPU.equals("1")){
+            jLabel21.setVisible(false);
+        }else if(CPU.equals("2")){
+            jLabel22.setVisible(false);
+        }else if(CPU.equals("3")){
+            jLabel23.setVisible(false);
+        }else if(CPU.equals("4")){
+            jLabel4.setVisible(false);
+        }
+    }
+   
     public void ModificarTables(){
         
         jTable2.getTableHeader().setVisible(false);
@@ -1341,6 +1403,10 @@ public class Interfaz extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;

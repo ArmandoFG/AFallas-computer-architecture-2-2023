@@ -87,12 +87,20 @@ public class CPU extends Thread {
                             }
                             banderapasoaPaso = false;
                         }else if(banderaAgregarInstr == true){
-                            System.out.println("Entra:"+get_num_cpu());
+                            System.out.println("Entra:"+get_num_cpu()+" "+ui.get_instr());
                             if(this.get_num_cpu().equals(ui.get_CPU())){
                                 instrF=ui.get_instr();
                                 dirF=ui.get_dir();
                                 datoF=ui.get_dat();
-                                Dat=instrF+" "+dirF+";"+datoF;
+                                if(instrF.equals("WRITE")){
+                                    Dat=instrF+" "+dirF+";"+datoF;
+                                }else if(instrF.equals("READ")){
+                                    Dat=instrF+" "+dirF;
+                                }else if(instrF.equals("CALC")){
+
+                                    Dat=instrF;
+                                }
+                                ui.cambiartexto(Dat, Ejecutando);
                                 this.Moesi();
                                 ui.cambiartexto("-------", Ejecutando);
                             }
@@ -101,9 +109,11 @@ public class CPU extends Thread {
                         Thread.sleep(1000);
                         if(ui.get_BanderaPasoApaso()==true){
                             banderapasoaPaso = true;
+                            Thread.sleep(500);
                             ui.pasoApaso = false;
                         }else if(ui.get_banderaAgregarInstr()==true){
                             banderaAgregarInstr = true;
+                            Thread.sleep(500);
                             ui.set_banderaAgregarInstr(false);
                         }
                     } catch (InterruptedException ex) {
@@ -184,15 +194,30 @@ public class CPU extends Thread {
                 
             }
     
-    public void Moesi(){
+    public void Moesi() throws InterruptedException{
         if(this.instrF.equals("CALC")){
             
             this.Dat_pas = this.Dat;
+            Thread.sleep(timepoInst);
+
             ui.cambiartexto(Dat_pas, Ejecutado);
             this.banderaInstr = false;
  
         } else if(this.instrF.equals("READ")){
             if(mm.buscarDirCache(dirF).equals("miss")){
+                Thread HiloMiss = new Thread(new Runnable() {
+                    public void run() {
+                        ui.setVisibilityMissTrue(numCPU);
+                        try {
+                            Thread.sleep(2000);
+                        } catch (InterruptedException ex) {
+                            Logger.getLogger(CPU.class.getName()).log(Level.SEVERE, null, ex);
+                        }
+                        ui.setVisibilityMissFalse(numCPU);
+                    }
+                });
+                HiloMiss.start();
+                Thread.sleep(timepoInst);
                 String Valor = busCPU.preguntarReadDir(this.get_num_cpu(), this.get_dirF());
                 char ultimoChar = dirF.charAt(dirF.length() - 1);
                 char primerChar = Valor.charAt(0);
@@ -203,6 +228,21 @@ public class CPU extends Thread {
 
             }
         }else if(this.instrF.equals("WRITE")){
+            if(mm.buscarDirCache(dirF).equals("miss")){
+                Thread HiloMiss = new Thread(new Runnable() {
+                    public void run() {
+                        ui.setVisibilityMissTrue(numCPU);
+                        try {
+                            Thread.sleep(2000);
+                        } catch (InterruptedException ex) {
+                            Logger.getLogger(CPU.class.getName()).log(Level.SEVERE, null, ex);
+                        }
+                        ui.setVisibilityMissFalse(numCPU);
+                    }
+                });
+                HiloMiss.start();
+            }
+            Thread.sleep(timepoInst);
             char ultimoChar = dirF.charAt(dirF.length() - 1);
             String accion = mm.IngresarDatoJTableWrite(dirF, datoF, String.valueOf(ultimoChar));
             if(accion.equals("invalidar")){
