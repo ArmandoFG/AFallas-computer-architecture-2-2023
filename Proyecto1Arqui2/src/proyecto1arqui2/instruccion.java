@@ -21,7 +21,7 @@ public class instruccion {
        
        instruccion(int num_proc)
                {
-                   this.rFuncion = new Random(System.currentTimeMillis()*num_proc*1000); 
+                   this.rFuncion = new Random(System.currentTimeMillis()*num_proc*1000-num_proc*400); 
                    this.instrF = "";
                    this.dirF = "";
                    this.datoF = "";

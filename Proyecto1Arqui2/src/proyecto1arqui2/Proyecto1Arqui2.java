@@ -19,7 +19,7 @@ public class Proyecto1Arqui2 {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         
         Interfaz ui;
         
@@ -29,16 +29,21 @@ public class Proyecto1Arqui2 {
         ui = new Interfaz();
         ui.setVisible(true);
          
-        mem= new memoria(ui);
+        mem= new memoria(ui,TiempoDuración+1000);
         
         busCPU = new bus(mem);
-        
+         
+        Thread.sleep(100);
+
         cpu1= new CPU("1",ui,busCPU,mem);
         cpu1.set_timepoInst(TiempoDuración);
+        Thread.sleep(100);
         cpu2= new CPU("2",ui,busCPU,mem);
         cpu2.set_timepoInst(TiempoDuración);
+        Thread.sleep(100);
         cpu3= new CPU("3",ui,busCPU,mem);
         cpu3.set_timepoInst(TiempoDuración);
+        Thread.sleep(100);
         cpu4= new CPU("4",ui,busCPU,mem);
         cpu4.set_timepoInst(TiempoDuración);
         
@@ -53,11 +58,9 @@ public class Proyecto1Arqui2 {
         
         cpu1.start();
         cpu2.start();
-        
-        /*
         cpu3.start();
         cpu4.start();
-      */
+   
         
         
     }

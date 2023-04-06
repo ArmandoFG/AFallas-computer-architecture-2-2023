@@ -165,7 +165,7 @@
                 <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                   <Table columnCount="2" rowCount="3">
                     <Column editable="false" title="" type="java.lang.String">
-                      <Data value="Estado"/>
+                      <Data value="Estado Bloque1"/>
                       <Data value="Direcci&#xf3;n"/>
                       <Data value="Dato"/>
                     </Column>
@@ -196,7 +196,7 @@
                 <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                   <Table columnCount="2" rowCount="3">
                     <Column editable="false" title="" type="java.lang.String">
-                      <Data value="Estado"/>
+                      <Data value="Estado Bloque2"/>
                       <Data value="Direcci&#xf3;n"/>
                       <Data value="Dato"/>
                     </Column>
@@ -227,7 +227,7 @@
                 <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                   <Table columnCount="2" rowCount="3">
                     <Column editable="false" title="" type="java.lang.String">
-                      <Data value="Estado"/>
+                      <Data value="Estado Bloque3"/>
                       <Data value="Direcci&#xf3;n"/>
                       <Data value="Dato"/>
                     </Column>
@@ -258,7 +258,7 @@
                 <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                   <Table columnCount="2" rowCount="3">
                     <Column editable="false" title="" type="java.lang.String">
-                      <Data value="Estado"/>
+                      <Data value="Estado Bloque4"/>
                       <Data value="Direcci&#xf3;n"/>
                       <Data value="Dato"/>
                     </Column>
@@ -328,7 +328,7 @@
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
-                  <EmptySpace max="-2" attributes="0"/>
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="jScrollPane2" alignment="0" pref="0" max="32767" attributes="0"/>
                       <Component id="jScrollPane3" alignment="0" pref="0" max="32767" attributes="0"/>
@@ -341,19 +341,19 @@
                               <Component id="jLabel5" alignment="0" min="-2" max="-2" attributes="0"/>
                               <Component id="jLabel8" alignment="0" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace min="0" pref="1" max="32767" attributes="0"/>
+                          <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <EmptySpace max="-2" attributes="0"/>
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace max="-2" attributes="0"/>
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
                   <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace max="-2" attributes="0"/>
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
                   <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
                   <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
@@ -361,13 +361,13 @@
                   <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="32767" attributes="0"/>
                   <Component id="jScrollPane3" min="-2" pref="56" max="-2" attributes="0"/>
-                  <EmptySpace max="-2" attributes="0"/>
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
                   <Component id="jScrollPane2" min="-2" pref="56" max="-2" attributes="0"/>
-                  <EmptySpace max="-2" attributes="0"/>
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
                   <Component id="jScrollPane5" min="-2" pref="56" max="-2" attributes="0"/>
-                  <EmptySpace max="-2" attributes="0"/>
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
                   <Component id="jScrollPane4" min="-2" pref="56" max="-2" attributes="0"/>
-                  <EmptySpace max="-2" attributes="0"/>
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -385,7 +385,7 @@
                 <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                   <Table columnCount="2" rowCount="3">
                     <Column editable="false" title="" type="java.lang.String">
-                      <Data value="Estado"/>
+                      <Data value="Estado Bloque2"/>
                       <Data value="Direcci&#xf3;n"/>
                       <Data value="Dato"/>
                     </Column>
@@ -416,7 +416,7 @@
                 <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                   <Table columnCount="2" rowCount="3">
                     <Column editable="false" title="" type="java.lang.String">
-                      <Data value="Estado"/>
+                      <Data value="Estado Bloque1"/>
                       <Data value="Direcci&#xf3;n"/>
                       <Data value="Dato"/>
                     </Column>
@@ -447,7 +447,7 @@
                 <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                   <Table columnCount="2" rowCount="3">
                     <Column editable="false" title="" type="java.lang.String">
-                      <Data value="Estado"/>
+                      <Data value="Estado Bloque4"/>
                       <Data value="Direcci&#xf3;n"/>
                       <Data value="Dato"/>
                     </Column>
@@ -478,7 +478,7 @@
                 <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                   <Table columnCount="2" rowCount="3">
                     <Column editable="false" title="" type="java.lang.String">
-                      <Data value="Estado"/>
+                      <Data value="Estado Bloque3"/>
                       <Data value="Direcci&#xf3;n"/>
                       <Data value="Dato"/>
                     </Column>
@@ -612,7 +612,7 @@
                 <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                   <Table columnCount="2" rowCount="3">
                     <Column editable="false" title="" type="java.lang.String">
-                      <Data value="Estado"/>
+                      <Data value="Estado Bloque1"/>
                       <Data value="Direcci&#xf3;n"/>
                       <Data value="Dato"/>
                     </Column>
@@ -642,7 +642,7 @@
                 <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                   <Table columnCount="2" rowCount="3">
                     <Column editable="false" title="" type="java.lang.String">
-                      <Data value="Estado"/>
+                      <Data value="Estado Bloque2"/>
                       <Data value="Direcci&#xf3;n"/>
                       <Data value="Dato"/>
                     </Column>
@@ -673,7 +673,7 @@
                 <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                   <Table columnCount="2" rowCount="3">
                     <Column editable="false" title="" type="java.lang.String">
-                      <Data value="Estado"/>
+                      <Data value="Estado Bloque3"/>
                       <Data value="Direcci&#xf3;n"/>
                       <Data value="Dato"/>
                     </Column>
@@ -704,7 +704,7 @@
                 <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                   <Table columnCount="2" rowCount="3">
                     <Column editable="false" title="" type="java.lang.String">
-                      <Data value="Estado"/>
+                      <Data value="Estado Bloque4"/>
                       <Data value="Direcci&#xf3;n"/>
                       <Data value="Dato"/>
                     </Column>
@@ -831,7 +831,7 @@
                 <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                   <Table columnCount="2" rowCount="3">
                     <Column editable="false" title="" type="java.lang.String">
-                      <Data value="Estado"/>
+                      <Data value="Estado Bloque1"/>
                       <Data value="Direcci&#xf3;n"/>
                       <Data value="Dato"/>
                     </Column>
@@ -862,7 +862,7 @@
                 <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                   <Table columnCount="2" rowCount="3">
                     <Column editable="false" title="" type="java.lang.String">
-                      <Data value="Estado"/>
+                      <Data value="Estado Bloque2"/>
                       <Data value="Direcci&#xf3;n"/>
                       <Data value="Dato"/>
                     </Column>
@@ -893,7 +893,7 @@
                 <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                   <Table columnCount="2" rowCount="3">
                     <Column editable="false" title="" type="java.lang.String">
-                      <Data value="Estado"/>
+                      <Data value="Estado Bloque3"/>
                       <Data value="Direcci&#xf3;n"/>
                       <Data value="Dato"/>
                     </Column>
@@ -924,7 +924,7 @@
                 <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                   <Table columnCount="2" rowCount="3">
                     <Column editable="false" title="" type="java.lang.String">
-                      <Data value="Estado"/>
+                      <Data value="Estado Bloque4"/>
                       <Data value="Direcci&#xf3;n"/>
                       <Data value="Dato"/>
                     </Column>
@@ -1021,7 +1021,7 @@
             <Component class="javax.swing.JTable" name="jTable18">
               <Properties>
                 <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
-                  <Connection code="new javax.swing.table.DefaultTableModel(&#xa;    new Object [][] {&#xa;        {&quot;10&quot;, &quot;11&quot;, &quot;02&quot;, &quot;20&quot;, &quot;32&quot;, &quot;12&quot;, &quot;4&quot;, &quot;53&quot;}&#xa;    },&#xa;    new String [] {&#xa;        &quot;Bloque 0&quot;, &quot;Bloque 1&quot;, &quot;Bloque 2&quot;, &quot;Bloque 3&quot;, &quot;Bloque 4&quot;, &quot;Bloque 5&quot;, &quot;Bloque 6&quot;, &quot;Bloque 7&quot;&#xa;    }&#xa;) {&#xa;    Class[] types = new Class [] {&#xa;        java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class&#xa;    };&#xa;    boolean[] canEdit = new boolean [] {&#xa;        false, false, false, false, false, false, false, false&#xa;    };&#xa;&#xa;    public Class getColumnClass(int columnIndex) {&#xa;        return types [columnIndex];&#xa;    }&#xa;&#xa;    public boolean isCellEditable(int rowIndex, int columnIndex) {&#xa;        return canEdit [columnIndex];&#xa;    }&#xa;}" type="code"/>
+                  <Connection code="new javax.swing.table.DefaultTableModel(&#xa;    new Object [][] {&#xa;        {&quot;0000&quot;, &quot;0000&quot;, &quot;0000&quot;, &quot;0000&quot;, &quot;0000&quot;, &quot;0000&quot;, &quot;0000&quot;, &quot;0000&quot;}&#xa;    },&#xa;    new String [] {&#xa;        &quot;Bloque 0&quot;, &quot;Bloque 1&quot;, &quot;Bloque 2&quot;, &quot;Bloque 3&quot;, &quot;Bloque 4&quot;, &quot;Bloque 5&quot;, &quot;Bloque 6&quot;, &quot;Bloque 7&quot;&#xa;    }&#xa;) {&#xa;    Class[] types = new Class [] {&#xa;        java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class&#xa;    };&#xa;    boolean[] canEdit = new boolean [] {&#xa;        false, false, false, false, false, false, false, false&#xa;    };&#xa;&#xa;    public Class getColumnClass(int columnIndex) {&#xa;        return types [columnIndex];&#xa;    }&#xa;&#xa;    public boolean isCellEditable(int rowIndex, int columnIndex) {&#xa;        return canEdit [columnIndex];&#xa;    }&#xa;}" type="code"/>
                 </Property>
                 <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
                   <TableColumnModel selectionModel="0">
@@ -1129,11 +1129,6 @@
                   </Group>
                   <EmptySpace min="-2" pref="106" max="-2" attributes="0"/>
               </Group>
-              <Group type="102" alignment="1" attributes="0">
-                  <EmptySpace min="-2" pref="83" max="-2" attributes="0"/>
-                  <Component id="jButton4" max="32767" attributes="0"/>
-                  <EmptySpace min="-2" pref="95" max="-2" attributes="0"/>
-              </Group>
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
                   <Component id="jComboBox2" pref="0" max="32767" attributes="0"/>
@@ -1142,6 +1137,27 @@
                   <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
                   <Component id="jTextField1" min="-2" pref="74" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
+              </Group>
+              <Group type="102" alignment="1" attributes="0">
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="jLabel21" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="-2" pref="83" max="-2" attributes="0"/>
+                          <Component id="jButton4" max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          <Group type="103" groupAlignment="1" attributes="0">
+                              <Component id="jLabel24" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel23" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel22" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <EmptySpace min="-2" pref="95" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -1166,6 +1182,14 @@
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="jButton4" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+                  <Component id="jLabel21" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jLabel22" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jLabel23" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jLabel24" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
@@ -1225,17 +1249,8 @@
         </Component>
         <Component class="javax.swing.JComboBox" name="jComboBox3">
           <Properties>
-            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-              <StringArray count="8">
-                <StringItem index="0" value="0000"/>
-                <StringItem index="1" value="0001"/>
-                <StringItem index="2" value="0010"/>
-                <StringItem index="3" value="0011"/>
-                <StringItem index="4" value="0100"/>
-                <StringItem index="5" value="0101"/>
-                <StringItem index="6" value="0110"/>
-                <StringItem index="7" value="0111"/>
-              </StringArray>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="new javax.swing.DefaultComboBoxModel&lt;&gt;(new String[] { &quot;000&quot;, &quot;001&quot;, &quot;010&quot;, &quot;011&quot;, &quot;100&quot;, &quot;101&quot;, &quot;110&quot;, &quot;111&quot; })" type="code"/>
             </Property>
           </Properties>
           <AuxValues>
@@ -1260,6 +1275,50 @@
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jButton4MouseClicked"/>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton4ActionPerformed"/>
           </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel21">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Yu Gothic UI Semilight" size="24" style="1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="MISS CPU1"/>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="jLabel21.setVisible(false);"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel22">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Yu Gothic UI Semilight" size="24" style="1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="MISS CPU2"/>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="jLabel22.setVisible(false);"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel23">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Yu Gothic UI Semilight" size="24" style="1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="MISS CPU3"/>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="jLabel23.setVisible(false);"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel24">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Yu Gothic UI Semilight" size="24" style="1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="MISS CPU4"/>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="jLabel24.setVisible(false);"/>
+          </AuxValues>
         </Component>
       </SubComponents>
     </Container>
